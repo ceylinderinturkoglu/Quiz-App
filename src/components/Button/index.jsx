@@ -1,15 +1,9 @@
 import React from "react";
 import "./style.css";
-import { useDispatch } from "react-redux";
-import { setStart } from "../../store/quizSlice";
 
-const Button = ({ text }) => {
-  const dispatch = useDispatch();
-  const handleClick = () => {
-    dispatch(setStart(true));
-  };
+const Button = ({ text, onClick }) => { 
   return (
-    <button className="btn" onClick={handleClick}>
+    <button className="btn" onClick={onClick}>
       {text}
     </button>
   );
