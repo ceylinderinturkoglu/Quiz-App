@@ -1,6 +1,6 @@
 [
   {
-    "difficulty": "kolay",
+    "difficulty": "Kolay",
     "question": "React nedir?",
     "answers": [
       "Bir JavaScript framework'ü",
@@ -11,13 +11,13 @@
     "correct_answer": "Bir JavaScript kütüphanesi"
   },
   {
-    "difficulty": "kolay",
+    "difficulty": "Kolay",
     "question": "React uygulamalarında bileşenlerin temel yapı taşı nedir?",
     "answers": ["Modüller", "Servisler", "Bileşenler", "Direktifler"],
     "correct_answer": "Bileşenler"
   },
   {
-    "difficulty": "kolay",
+    "difficulty": "Kolay",
     "question": "React'ta bileşenlerin hangi yöntemle oluşturulması önerilir?",
     "answers": [
       "Fonksiyonel bileşenler",
@@ -28,7 +28,7 @@
     "correct_answer": "Fonksiyonel bileşenler"
   },
   {
-    "difficulty": "kolay",
+    "difficulty": "Kolay",
     "question": "React bileşenleri nasıl tanımlanır?",
     "answers": [
       "Bir fonksiyon veya sınıf olarak",
@@ -39,7 +39,7 @@
     "correct_answer": "Bir fonksiyon veya sınıf olarak"
   },
   {
-    "difficulty": "kolay",
+    "difficulty": "Kolay",
     "question": "JSX nedir?",
     "answers": [
       "JavaScript ile HTML'in birleşimi",
@@ -50,31 +50,31 @@
     "correct_answer": "JavaScript ile HTML'in birleşimi"
   },
   {
-    "difficulty": "kolay",
+    "difficulty": "Kolay",
     "question": "React'ta bileşenlerin render edilmesi için hangi metod kullanılır?",
     "answers": ["render()", "display()", "show()", "mount()"],
     "correct_answer": "render()"
   },
   {
-    "difficulty": "kolay",
+    "difficulty": "Kolay",
     "question": "React uygulamalarında hangi dosya uzantısı kullanılır?",
     "answers": [".jsx", ".js", ".react", ".html"],
     "correct_answer": ".jsx"
   },
   {
-    "difficulty": "kolay",
+    "difficulty": "Kolay",
     "question": "React'ta stil eklemek için hangi yöntem kullanılabilir?",
     "answers": ["Inline CSS", "Harici stil dosyası", "CSS modülleri", "Hepsi"],
     "correct_answer": "Hepsi"
   },
   {
-    "difficulty": "kolay",
+    "difficulty": "Kolay",
     "question": "React'ta form verilerini yönetmek için hangi hook kullanılır?",
     "answers": ["useState", "useEffect", "useForm", "useReducer"],
     "correct_answer": "useState"
   },
   {
-    "difficulty": "kolay",
+    "difficulty": "Kolay",
     "question": "React'ta bileşenler nasıl yeniden kullanılabilir?",
     "answers": [
       "Props kullanarak",
@@ -85,7 +85,7 @@
     "correct_answer": "Props kullanarak"
   },
   {
-    "difficulty": "orta",
+    "difficulty": "Orta",
     "question": "React'ta 'state' nedir?",
     "answers": [
       "Bileşenlerin durumunu tutan bir nesne",
@@ -96,7 +96,7 @@
     "correct_answer": "Bileşenlerin durumunu tutan bir nesne"
   },
   {
-    "difficulty": "orta",
+    "difficulty": "Orta",
     "question": "React'ta 'props' nedir?",
     "answers": [
       "Bileşenlere veri aktarımı için kullanılan özelikler",
@@ -107,7 +107,7 @@
     "correct_answer": "Bileşenlere veri aktarımı için kullanılan özelikler"
   },
   {
-    "difficulty": "orta",
+    "difficulty": "Orta",
     "question": "React Hook'larından biri olan 'useState' ne işe yarar?",
     "answers": [
       "State yönetimi sağlar",
@@ -118,7 +118,7 @@
     "correct_answer": "State yönetimi sağlar"
   },
   {
-    "difficulty": "orta",
+    "difficulty": "Orta",
     "question": "React'ta bileşen yaşam döngüsü nedir?",
     "answers": [
       "Bileşenin doğuşu, güncellenmesi ve yok oluşu",
@@ -129,7 +129,7 @@
     "correct_answer": "Bileşenin doğuşu, güncellenmesi ve yok oluşu"
   },
   {
-    "difficulty": "orta",
+    "difficulty": "Orta",
     "question": "React'ta 'useEffect' hook'u ne zaman çalışır?",
     "answers": [
       "Bileşen her render edildiğinde",
@@ -140,7 +140,7 @@
     "correct_answer": "Bileşen her render ve her güncellendiğinde"
   },
   {
-    "difficulty": "orta",
+    "difficulty": "Orta",
     "question": "React'ta 'key' prop'u neden kullanılır?",
     "answers": [
       "Liste elemanlarının benzersizliğini sağlamak için",
@@ -151,13 +151,13 @@
     "correct_answer": "Liste elemanlarının benzersizliğini sağlamak için"
   },
   {
-    "difficulty": "orta",
+    "difficulty": "Orta",
     "question": "React bileşenlerinde performans iyileştirmesi için hangi yöntem kullanılır?",
     "answers": ["Memoization", "Debouncing", "Throttling", "Caching"],
     "correct_answer": "Memoization"
   },
   {
-    "difficulty": "orta",
+    "difficulty": "Orta",
     "question": "React'ta 'useReducer' hook'u ne işe yarar?",
     "answers": [
       "State yönetimini daha karmaşık hale getirmek",
@@ -168,7 +168,7 @@
     "correct_answer": "State yönetimini daha karmaşık hale getirmek"
   },
   {
-    "difficulty": "orta",
+    "difficulty": "Orta",
     "question": "React'ta 'context' API nedir?",
     "answers": [
       "Bileşenler arasında veri paylaşımını sağlar",
@@ -179,7 +179,7 @@
     "correct_answer": "Bileşenler arasında veri paylaşımını sağlar"
   },
   {
-    "difficulty": "orta",
+    "difficulty": "Orta",
     "question": "React'ta 'prop drilling' nedir?",
     "answers": [
       "Verilerin birden fazla bileşene taşınması",
@@ -190,13 +190,13 @@
     "correct_answer": "Verilerin birden fazla bileşene taşınması"
   },
   {
-    "difficulty": "zor",
+    "difficulty": "Zor",
     "question": "React uygulamalarında performans iyileştirmesi için hangi yöntem kullanılır?",
     "answers": ["React.memo", "React.save", "React.optimize", "React.cache"],
     "correct_answer": "React.memo"
   },
   {
-    "difficulty": "zor",
+    "difficulty": "Zor",
     "question": "React'ta context API ne için kullanılır?",
     "answers": [
       "Bileşenler arasında veri paylaşımı",
@@ -207,7 +207,7 @@
     "correct_answer": "Bileşenler arasında veri paylaşımı"
   },
   {
-    "difficulty": "zor",
+    "difficulty": "Zor",
     "question": "React uygulamalarında 'useEffect' hook'u ne zaman çalışır?",
     "answers": [
       "Bileşen her render edildiğinde",
@@ -218,7 +218,7 @@
     "correct_answer": "Bileşen her render ve her güncellendiğinde"
   },
   {
-    "difficulty": "zor",
+    "difficulty": "Zor",
     "question": "React'ta 'key' prop'u neden kullanılır?",
     "answers": [
       "Liste elemanlarının benzersizliğini sağlamak için",
@@ -229,7 +229,7 @@
     "correct_answer": "Liste elemanlarının benzersizliğini sağlamak için"
   },
   {
-    "difficulty": "zor",
+    "difficulty": "Zor",
     "question": "React uygulamalarında performans sorunlarını nasıl çözersiniz?",
     "answers": [
       "Profiling ve optimizasyon yaparak",
@@ -240,7 +240,7 @@
     "correct_answer": "Profiling ve optimizasyon yaparak"
   },
   {
-    "difficulty": "zor",
+    "difficulty": "Zor",
     "question": "React'ta 'useMemo' hook'u ne işe yarar?",
     "answers": [
       "Memoization yaparak performans artırmak",
@@ -251,7 +251,7 @@
     "correct_answer": "Memoization yaparak performans artırmak"
   },
   {
-    "difficulty": "zor",
+    "difficulty": "Zor",
     "question": "React'ta 'useCallback' hook'u ne işe yarar?",
     "answers": [
       "Fonksiyonları memoize ederek performans artırmak",
@@ -262,7 +262,7 @@
     "correct_answer": "Fonksiyonları memoize ederek performans artırmak"
   },
   {
-    "difficulty": "zor",
+    "difficulty": "Zor",
     "question": "React uygulamalarında hata yakalamak için hangi yöntem kullanılır?",
     "answers": [
       "Error Boundary",
@@ -273,7 +273,7 @@
     "correct_answer": "Error Boundary"
   },
   {
-    "difficulty": "zor",
+    "difficulty": "Zor",
     "question": "React'ta bileşenlerin tekrar render edilmesini nasıl önlersiniz?",
     "answers": [
       "shouldComponentUpdate metodu ile",

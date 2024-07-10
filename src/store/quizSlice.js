@@ -1,15 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 const quizSlice = createSlice({
   name: "quiz",
-  initialState: { start: false, difficulty: "Zor" },
+  initialState: { isStart: false, difficulty: "Kolay" },
   reducers: {
-    setStart: (state, action) => {
-      state.start = action.payload;
+    setIsStart: (state, action) => {
+      state.isStart = action.payload;
     },
     setDifficulty: (state, action) => {
       state.difficulty = action.payload;
     },
   },
 });
-export const { setStart, setDifficulty } = quizSlice.actions;
+export const { setIsStart, setDifficulty } = quizSlice.actions;
 export default quizSlice.reducer;
