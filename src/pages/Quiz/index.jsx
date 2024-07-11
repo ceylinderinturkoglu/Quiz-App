@@ -41,7 +41,7 @@ const Quiz = () => {
         )
       ) : (
         <div className="result">
-          <span className="result__score">{score.toFixed(2)} paun</span>
+          <span className="result__score">{score.toFixed(2)} puan</span>
           <Button text={"Tekrar Dene"} onClick={handleReset} />
         </div>
       )}
