@@ -1,0 +1,26 @@
+body,
+#root {
+    height: 100vh;
+    font-family: Arial;
+}
+
+.container {
+    display: grid;
+    place-content: center;
+    gap: 16px;
+    height: 100%;
+}
+
+.container h1 {
+    margin-bottom: 0;
+}
+
+.container h1,
+.container p {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+}

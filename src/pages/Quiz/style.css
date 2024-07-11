@@ -1,0 +1,11 @@
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.result__score {
+    font-size: 2rem;
+    color: #ea4c89;
+    font-weight: 700;
+}

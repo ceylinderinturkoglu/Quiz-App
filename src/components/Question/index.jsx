@@ -1,36 +1,31 @@
 import React, { useEffect, useState } from "react";
+import { incrementScore, setIsCompleted } from "../../store/quizSlice";
+import { useSelector, useDispatch } from "react-redux";
+import "./style.css";
 
 const Question = ({ questions }) => {
+  const dispatch = useDispatch();
+  const { isCompleted } = useSelector((state) => state.quiz);
+
   const [question, setQuestion] = useState({});
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [timer, setTimer] = useState(2);
-  const [score, setScore] = useState(0);
-  const [isCompleted, setIsCompleted] = useState(false);
+  const [timer, setTimer] = useState(10);
   const pointsPerQuestion = 100 / questions.length;
 
   const handleClick = (selectedAnswer) => {
-    if (selectedAnswer === question.correct_answer) {
-      setScore((prevScore) => prevScore + pointsPerQuestion);
-    }
+    selectedAnswer === question.correct_answer &&
+      dispatch(incrementScore(pointsPerQuestion));
 
-    if (questionIndex < questions.length - 1) {
-      setQuestionIndex((prevQuestionIndex) => prevQuestionIndex + 1);
-    } else {
-      setIsCompleted(true);
-      console.log(
-        `Final Score: ${
-          score +
-          (selectedAnswer === question.correct_answer ? pointsPerQuestion : 0)
-        }`
-      );
-    }
+    questionIndex < questions.length - 1
+      ? setQuestionIndex((prevQuestionIndex) => prevQuestionIndex + 1)
+      : dispatch(setIsCompleted(true));
   };
 
   useEffect(() => {
     if (isCompleted) return;
 
     setQuestion(questions[questionIndex]);
-    setTimer(2);
+    setTimer(10);
 
     const countdown = setInterval(() => {
       setTimer((prev) => {
@@ -47,20 +42,23 @@ const Question = ({ questions }) => {
   }, [questionIndex, questions, isCompleted]);
 
   return (
-    <div>
-      <p>
-        {questionIndex + 1} / {questions.length} - {question.question}
-      </p>
-      <p>Zaman: {timer} saniye</p>
-      <p>Doğru Cevap: {question.correct_answer}</p>
-      <ul>
-        {question.answers?.map((answer, index) => (
-          <li key={index} onClick={() => handleClick(answer)}>
-            {answer}
-          </li>
-        ))}
-      </ul>
-      {isCompleted && <p>Final Score: {score}</p>}
+    <div className="question">
+      <div className="question__head">
+        <span className="question__timer">{timer} saniye</span>
+        <span className="question__count">
+          {questionIndex + 1} / {questions.length}
+        </span>
+      </div>
+      <div className="question__body">
+        <span className="question__content">{question.question}</span>
+        <ul className="question__answers">
+          {question.answers?.map((answer, index) => (
+            <li key={index} onClick={() => handleClick(answer)}>
+              {answer}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
